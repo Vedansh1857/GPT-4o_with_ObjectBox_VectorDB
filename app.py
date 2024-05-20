@@ -16,7 +16,7 @@ load_dotenv()
 os.environ['OPEN_API_KEY']=os.getenv("OPENAI_API_KEY")
 groq_api_key=os.getenv('GROQ_API_KEY')
 
-st.title("Objectbox VectorstoreDB With Llama3 Demo")
+st.title("Objectbox VectorstoreDB With GPT-4o Demo")
 
 llm = ChatOpenAI(model="gpt-4o") ## Calling Gpt-4o
 
