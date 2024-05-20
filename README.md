@@ -2,7 +2,7 @@
 
 ## Here, I used Objectbox VectorDB, a new and efficient way of vector embeddings.
 
-### 1. Used Llama3-8b-8192 model from Groq.
+### 1. Used GPT-4o(omni) model from OpenAI.
 ### 2. Took US_cencus PDFs for querying.
 ### 3. For word embeddings, used OpenAIEmbeddings.
 ### 4. Used **ObjectBox VectorDB** stores for storing vectors.
