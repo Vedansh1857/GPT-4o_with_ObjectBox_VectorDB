@@ -1,6 +1,6 @@
 import streamlit as st
 import os
-from langchain_groq import ChatGroq
+from langchain_openai import ChatOpenAI
 from langchain_openai import OpenAIEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.chains.combine_documents import create_stuff_documents_chain
@@ -18,8 +18,7 @@ groq_api_key=os.getenv('GROQ_API_KEY')
 
 st.title("Objectbox VectorstoreDB With Llama3 Demo")
 
-llm=ChatGroq(groq_api_key=groq_api_key,
-             model_name="Llama3-8b-8192")
+llm = ChatOpenAI(model="gpt-4o") ## Calling Gpt-4o
 
 prompt=ChatPromptTemplate.from_template(
     """
